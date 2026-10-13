@@ -51,7 +51,7 @@ This uses **step-file architecture** for disciplined execution:
 
 ### Step 1: Resolve the Workflow Block
 
-Run: `python3 {project-root}/_bmad/scripts/resolve_customization.py --skill {skill-root} --key workflow`
+Run: `uv run {project-root}/_bmad/scripts/resolve_customization.py --skill {skill-root} --project-root {project-root} --key workflow`
 
 **If the script fails**, resolve the `workflow` block yourself by reading these three files in base → team → user order and applying the same structural merge rules as the resolver:
 
@@ -71,7 +71,7 @@ Treat every entry in `{workflow.persistent_facts}` as foundational context you c
 
 ### Step 4: Load Config
 
-Load config from `{project-root}/_bmad/bmm/config.yaml` and resolve:
+Run `uv run {project-root}/_bmad/scripts/resolve_config.py --project-root {project-root}` and use:
 - Use `{user_name}` for greeting
 - Use `{communication_language}` for all communications
 - Use `{document_output_language}` for output documents
@@ -86,7 +86,7 @@ Greet `{user_name}`, speaking in `{communication_language}`.
 
 Execute each entry in `{workflow.activation_steps_append}` in order.
 
-Activation is complete. Begin the workflow below.
+Activation is complete. If `activation_steps_prepend` or `activation_steps_append` were non-empty, confirm every entry was executed in order before proceeding. Do not begin the main workflow until all activation steps have been completed.
 
 ## Execution
 
