@@ -14,6 +14,12 @@ and testing; application source-code creation was not part of that recorded proc
 - [Architecture](_bmad-output/planning-artifacts/architecture.md)
 - [Epics & Stories](_bmad-output/planning-artifacts/epics.md)
 
+## Epic 1 resources
+
+- [Start here: Epic 1](START_HERE_EPIC_1.md)
+- [Epic 1 delivery summary](EPIC_1_DELIVERY_SUMMARY.md)
+- [Reviewing guide](REVIEWING.md)
+
 ## Chat history and highlights
 
 The exported GitHub Copilot chats are Markdown files in
