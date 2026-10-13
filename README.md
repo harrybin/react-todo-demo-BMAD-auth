@@ -8,6 +8,12 @@ GitHub Copilot chat shows the BMAD-assisted requirements and test-planning proce
 It took a little over two hours and covered requirements, planning, architecture,
 and testing; application source-code creation was not part of that recorded process.
 
+## Planning documents
+
+- [Product requirements (PRD)](_bmad-output/planning-artifacts/prd.md)
+- [Architecture](_bmad-output/planning-artifacts/architecture.md)
+- [Epics & Stories](_bmad-output/planning-artifacts/epics.md)
+
 ## Chat history and highlights
 
 The exported GitHub Copilot chats are Markdown files in
